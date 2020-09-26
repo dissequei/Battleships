@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -42,6 +44,8 @@ import pl.vgtworld.games.statki.Ustawienia;
 import pl.vgtworld.games.statki.ai.Ai;
 import pl.vgtworld.games.statki.ai.AiFactory;
 import pl.vgtworld.tools.Pozycja;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
 
 /**
  * Glowne okno gry.
@@ -269,6 +273,20 @@ public class JFrameOknoGry
 						}
 					else if (bTrafienie == true)
 						{
+                                                    
+                                                //COLOCAR AUDIO DE EXPLOSÃO
+                                                
+                                                InputStream in;
+                                                
+                                                    try {
+                                                        
+                                                        in = new FileInputStream(new File ("src\\pl\\vgtworld\\games\\statki\\components\\explosao.mp3"));
+                                                        AudioStream ad = new AudioStream(in);
+                                                        AudioPlayer.player.start(ad);
+                                                  
+                                                    } catch (Exception e) {
+                                                    }
+                                                    
 						oComponentStatusGry.aktualizujDane();
 						if (iIloscZatopionychPrzedStrzalem != oStatkiKomputer.getIloscZatopionychStatkow())
 							oComponentWydarzenia.ustawPrawyKomunikat(LANG.getProperty("message.hit2"));

@@ -271,8 +271,11 @@ public class JDialogUstawienia
 		JPanel oStatkiKsztaltContainer2 = new JPanel();
 		JPanel oStatkiKsztaltContainer = new JPanel();
 		oStatkiKsztaltContainer.setLayout(new GridLayout(2, 1));
-		oStatkiKsztaltContainer.add(oStatkiProsteLinieLabel);
-		oStatkiKsztaltContainer.add(oStatkiProsteLinie);
+		
+                // REMOVIDA OPÇÃO QUE PERMITE O POSICIONAMENTO DOS NAVIOS DE FORMA QUE NÃO SEJA VERTICAL OU HORIZONTAL
+                //oStatkiKsztaltContainer.add(oStatkiProsteLinieLabel);
+		//oStatkiKsztaltContainer.add(oStatkiProsteLinie);
+                
 		oStatkiKsztaltContainer2.add(oStatkiKsztaltContainer);
 		oPanelLewy.add(oStatkiKsztaltContainer2);
 		
