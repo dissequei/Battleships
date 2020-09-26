@@ -16,6 +16,9 @@ public class Main
 	 */
 	public static void main(String[] args)
 		{
+                    
+                Splash splash = new Splash();
+	                   
 		EventQueue.invokeLater(
 			new Runnable()
 				{
@@ -23,8 +26,8 @@ public class Main
 					{
 					Ustawienia oUstawienia = new Ustawienia();
 					StatusGry oStatusGry = new StatusGry();
-
-					JFrameOknoGry oOkno = new JFrameOknoGry(oStatusGry, oUstawienia, 800, 600);
+                                        
+                                        JFrameOknoGry oOkno = new JFrameOknoGry(oStatusGry, oUstawienia, 800, 600);
 					oOkno.setVisible(true);
 					}
 				}
