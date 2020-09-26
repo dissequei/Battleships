@@ -376,10 +376,12 @@ public class JFrameOknoGry
 			System.exit(1);
 			}
 
-		setMinimumSize(new Dimension(MIN_SZEROKOSC, MIN_WYSOKOSC));
+		//setMinimumSize(new Dimension(MIN_SZEROKOSC, MIN_WYSOKOSC));
 		
 		setTitle(JFrameOknoGry.LANG.getProperty("mainWindow.title"));
-		setSize(iSzerokosc, iWysokosc);
+		//setSize(iSzerokosc, iWysokosc);
+                setExtendedState(JFrameOknoGry.MAXIMIZED_BOTH);
+                setUndecorated(true);
 		setLayout(new BorderLayout());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
