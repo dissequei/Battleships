@@ -113,7 +113,7 @@ public class JComponentWydarzenia
 			}
 		else
 			oImgTlo = null;
-		oColorBackground = new Color(0, 0, 0);
+		oColorBackground = new Color(255, 255, 255);
 		oColorFont = new Color(255, 255, 255);
 		oCzcionka = new Font("Serif", Font.BOLD, FONT_WIELKOSC);
 		oGraczLewy = new JLabel("", JLabel.CENTER);

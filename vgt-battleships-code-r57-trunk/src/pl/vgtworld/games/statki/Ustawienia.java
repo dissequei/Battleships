@@ -72,7 +72,7 @@ public class Ustawienia
 			iPlanszaSzerokosc = 10;
 			iPlanszaWysokosc = 10;
 			iPoziomTrudnosci = 50;
-			bProsteLinie = false;
+			bProsteLinie = true;
 			aStatki = new ArrayList<Integer>(10);
 			aStatki.add(1);
 			aStatki.add(1);
