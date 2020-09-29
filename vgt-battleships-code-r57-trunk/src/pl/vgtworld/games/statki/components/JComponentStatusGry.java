@@ -28,7 +28,7 @@ public class JComponentStatusGry
 	private static final int ETYKIETY_FONT_WIELKOSC = 16;
 	private static final int WARTOSCI_FONT_WIELKOSC = 14;
 	private static final Color KOLOR_INFO = Color.WHITE;
-	private static final Color KOLOR_NEUTRALNY = Color.YELLOW;
+	private static final Color KOLOR_NEUTRALNY = Color.white;
 	private static final Color KOLOR_POZYTYWNY = Color.GREEN;
 	private static final Color KOLOR_NEGATYWNY = Color.RED;
 	private StatusGry oStatusGry;
@@ -86,7 +86,7 @@ public class JComponentStatusGry
 			oPunktyGracz.setForeground(KOLOR_NEUTRALNY);
 			oPunktyKomputer.setForeground(KOLOR_NEUTRALNY);
 			}
-		else if (oStatusGry.getPunktyGracz() > oStatusGry.getPunktyKomputer())
+                else if (oStatusGry.getPunktyGracz() > oStatusGry.getPunktyKomputer())
 			{
 			oPunktyGracz.setForeground(KOLOR_POZYTYWNY);
 			oPunktyKomputer.setForeground(KOLOR_NEGATYWNY);
@@ -99,7 +99,7 @@ public class JComponentStatusGry
 		//font
 		oEtykietaGracz.setFont(oFontEtykiety);
 		oEtykietaKomputer.setFont(oFontEtykiety);
-		oEtykietaPunktacja.setFont(oFontEtykiety);
+		//oEtykietaPunktacja.setFont(oFontEtykiety);
 		oEtykietaFlota.setFont(oFontEtykiety);
 		oPunktyGracz.setFont(oFontWartosci);
 		oPunktyKomputer.setFont(oFontWartosci);
@@ -108,11 +108,11 @@ public class JComponentStatusGry
 		oPanelPunkty.setOpaque(false);
 		oPanelPunkty.setLayout(new GridLayout(3, 2));
 		oPanelPunkty.add(new JLabel());
-		oPanelPunkty.add(oEtykietaPunktacja);
+		//oPanelPunkty.add(oEtykietaPunktacja);
 		oPanelPunkty.add(oEtykietaGracz);
-		oPanelPunkty.add(oPunktyGracz);
+		//oPanelPunkty.add(oPunktyGracz);
 		oPanelPunkty.add(oEtykietaKomputer);
-		oPanelPunkty.add(oPunktyKomputer);
+		//oPanelPunkty.add(oPunktyKomputer);
 		
 		try
 			{

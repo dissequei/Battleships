@@ -18,8 +18,8 @@ import javax.swing.SwingConstants;
  */
 public class Splash {
     
-    private final int larguraImg = 800;
-    private final int alturaImg = 600;
+    private final int larguraImg = 1000;
+    private final int alturaImg = 900;
     private final int tempoSplash = 6000;
     private final String caminhoImg = "/pl/vgtworld/games/statki/img/splash.png";
     
