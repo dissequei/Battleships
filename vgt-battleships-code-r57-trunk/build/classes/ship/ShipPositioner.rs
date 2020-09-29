@@ -1,2 +1,0 @@
-ship.StatkiPozycjonerException
-ship.ShipPositioner
