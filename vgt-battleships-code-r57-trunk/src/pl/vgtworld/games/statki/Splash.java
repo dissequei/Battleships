@@ -23,7 +23,7 @@ public class Splash {
     private final int tempoSplash = 6000;
     private final String caminhoImg = "/pl/vgtworld/games/statki/img/splash.png";
     
-    public Splash() throws InterruptedException{
+    public Splash(){
         
         JWindow janelaSplash = new JWindow();
         

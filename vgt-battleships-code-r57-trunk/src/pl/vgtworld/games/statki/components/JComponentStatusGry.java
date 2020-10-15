@@ -156,7 +156,7 @@ public class JComponentStatusGry
 	/**
 	 * Odswiezenie danych w komponencie na podstawie obiektu statusu gry.
 	 */
-	public void aktualizujDane()
+	public void updateData()
 		{
 		oPunktyGracz.setText("" + oStatusGry.getPunktyGracz());
 		oPunktyKomputer.setText("" + oStatusGry.getPunktyKomputer());

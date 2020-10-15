@@ -267,7 +267,7 @@ public class JFrameOknoGry
 					if (bTrafienie == true && oStatkiKomputer.getIloscStatkow() == oStatkiKomputer.getIloscZatopionychStatkow())
 						{
 						oStatusGry.zwyciestwoGracza();
-						oComponentStatusGry.aktualizujDane();
+						oComponentStatusGry.updateData();
 						JOptionPane.showMessageDialog(JFrameOknoGry.this, LANG.getProperty("message.win"));
 						return;
 						}
@@ -287,7 +287,7 @@ public class JFrameOknoGry
                                                     } catch (Exception e) {
                                                     }
                                                     
-						oComponentStatusGry.aktualizujDane();
+						oComponentStatusGry.updateData();
 						if (iIloscZatopionychPrzedStrzalem != oStatkiKomputer.getIloscZatopionychStatkow())
 							oComponentWydarzenia.ustawPrawyKomunikat(LANG.getProperty("message.hit2"));
 						else
@@ -313,7 +313,7 @@ public class JFrameOknoGry
 			if (bTrafienie == true && oStatkiGracz.getIloscStatkow() == oStatkiGracz.getIloscZatopionychStatkow())
 				{
 				oStatusGry.zwyciestwoKomputera();
-				oComponentStatusGry.aktualizujDane();
+				oComponentStatusGry.updateData();
 				int iIloscKomponentow = oPanelPlanszeKontener.getComponentCount();
 				JComponentPlansza oCompPlansza;
 				for (int i = 0; i < iIloscKomponentow; ++i)
@@ -328,7 +328,7 @@ public class JFrameOknoGry
 				}
 			else if (bTrafienie == true)
 				{
-				oComponentStatusGry.aktualizujDane();
+				oComponentStatusGry.updateData();
 				if (iIloscZatopionychPrzedStrzalem != oStatkiGracz.getIloscZatopionychStatkow())
 					oComponentWydarzenia.ustawLewyKomunikat(LANG.getProperty("message.hit2"));
 				else
@@ -523,7 +523,7 @@ public class JFrameOknoGry
 		oStatkiKomputer = JFrameOknoGry.generujGracza(oUstawienia);
 		oComponentStatusGry.setStatkiGracz(oStatkiGracz);
 		oComponentStatusGry.setStatkiKomputer(oStatkiKomputer);
-		oComponentStatusGry.aktualizujDane();
+		oComponentStatusGry.updateData();
 		oAi = AiFactory.getAi(oUstawienia.getPoziomTrudnosci(), oUstawienia.getProsteLinie(), oStatkiKomputer);
 		StatkiPozycjoner oPozycjoner = new StatkiPozycjoner();
 		boolean bUdaneRozmieszczenie = false;
