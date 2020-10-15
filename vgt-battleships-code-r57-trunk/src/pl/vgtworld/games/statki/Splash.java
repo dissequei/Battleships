@@ -23,7 +23,7 @@ public class Splash {
     private final int tempoSplash = 6000;
     private final String caminhoImg = "/pl/vgtworld/games/statki/img/splash.png";
     
-    public Splash(){
+    public Splash() throws InterruptedException{
         
         JWindow janelaSplash = new JWindow();
         
@@ -44,9 +44,7 @@ public class Splash {
         
         janelaSplash.setVisible(true);
         
-        try{
-            Thread.sleep(tempoSplash);
-        }catch(InterruptedException e){}
+        Thread.sleep(tempoSplash);
         
         janelaSplash.dispose(); 
         
