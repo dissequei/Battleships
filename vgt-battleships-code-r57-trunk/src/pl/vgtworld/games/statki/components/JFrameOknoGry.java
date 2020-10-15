@@ -63,11 +63,13 @@ public class JFrameOknoGry
 	/**
 	 * Stala przechowujaca minimalna szerokosc okna glownego gry.
 	 */
-	public static final int MIN_SZEROKOSC = 640;
+        // REMOVIDO VARIAVEL DE DIMENSIONAMENTO EM REFATORAÇÃO
+	//public static final int MIN_SZEROKOSC = 640;
 	/**
 	 * Stala przechowujaca minimalna wysokosc okna glownego gry.
 	 */
-	public static final int MIN_WYSOKOSC = 480;
+        // REMOVIDO VARIAVEL DE DIMENSIONAMENTO EM REFATORAÇÃO
+	//public static final int MIN_WYSOKOSC = 480;
 	/**
 	 * Plik jezykowy.
 	 */
@@ -345,19 +347,20 @@ public class JFrameOknoGry
 	 * @param oStatusGry Obiekt przechowujacy informacje na temat aktualnego statusu gry.
 	 * @param oUstawienia Obiekt przechowujacy ustawienia dotyczace rozgrywki.
 	 */
-	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia)
-		{
-		this(oStatusGry, oUstawienia, MIN_SZEROKOSC, MIN_WYSOKOSC);
-		}
-	/**
-	 * konstruktor przeciazaony pozwalajacy zdefiniowac rozmiar okna gry.
-	 * 
-	 * @param oStatusGry Obiekt przechowujacy informacje na temat aktualnego statusu gry.
-	 * @param oUstawienia Obiekt przechowujacy ustawienia dotyczace rozgrywki.
-	 * @param iSzerokosc Szerokosc okno gry w pixelach.
-	 * @param iWysokosc Wysokosc okna gry w pixelach.
-	 */
-	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia, int iSzerokosc, int iWysokosc)
+        //REFATORAÇÃO DEAD CODE
+//	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia)
+//		{
+//		this(oStatusGry, oUstawienia/*, MIN_SZEROKOSC, MIN_WYSOKOSC*/);
+//		}
+//	/**
+	// * konstruktor przeciazaony pozwalajacy zdefiniowac rozmiar okna gry.
+	// * 
+	// * @param oStatusGry Obiekt przechowujacy informacje na temat aktualnego statusu gry.
+	// * @param oUstawienia Obiekt przechowujacy ustawienia dotyczace rozgrywki.
+	// * //@param iSzerokosc Szerokosc okno gry w pixelach.
+	// * //@param iWysokosc Wysokosc okna gry w pixelach.
+	// */
+	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia/*, int iSzerokosc, int iWysokosc ***REFATORAÇÃO DEAD CODE*/)
 		{
 		InputStream oPlik = getClass().getResourceAsStream("/wersja.txt");
 		if (oPlik != null)
@@ -393,11 +396,12 @@ public class JFrameOknoGry
 			JOptionPane.showMessageDialog(null, "error reading file", "Error", JOptionPane.ERROR_MESSAGE);
 			System.exit(1);
 			}
-
+                    
+                //IMPLEMENTAÇÃO DO METODO FULLSCREEN E REFATORAÇÃO DE DEAD CODE
 		//setMinimumSize(new Dimension(MIN_SZEROKOSC, MIN_WYSOKOSC));
+		//setSize(iSzerokosc, iWysokosc);
 		
 		setTitle(JFrameOknoGry.LANG.getProperty("mainWindow.title"));
-		//setSize(iSzerokosc, iWysokosc);
                 setExtendedState(JFrameOknoGry.MAXIMIZED_BOTH);
                 setUndecorated(true);
 		setLayout(new BorderLayout());

@@ -27,7 +27,7 @@ public class Main
 					{
 					Ustawienia oUstawienia = new Ustawienia();
 					StatusGry oStatusGry = new StatusGry();
-                                        JFrameOknoGry oOkno = new JFrameOknoGry(oStatusGry, oUstawienia, 800, 600);
+                                        JFrameOknoGry oOkno = new JFrameOknoGry(oStatusGry, oUstawienia/* ,800, 600***REFATORAÇÃO REMOVE DEAD CODE****/);
 					oOkno.setVisible(true);
                                        
 					}
