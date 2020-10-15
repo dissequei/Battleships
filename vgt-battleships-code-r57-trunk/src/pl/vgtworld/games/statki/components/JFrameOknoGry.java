@@ -360,7 +360,7 @@ public class JFrameOknoGry
 	// * //@param iSzerokosc Szerokosc okno gry w pixelach.
 	// * //@param iWysokosc Wysokosc okna gry w pixelach.
 	// */
-	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia/*, int iSzerokosc, int iWysokosc ***REFATORAÇÃO DEAD CODE*/)
+	public JFrameOknoGry(StatusGry oStatusGry, Ustawienia oUstawienia/*, int iSzerokosc, int iWysokosc ***REFATORAÇÃO CHANGE FUNCTION DECLARATION*/)
 		{
 		InputStream oPlik = getClass().getResourceAsStream("/wersja.txt");
 		if (oPlik != null)
