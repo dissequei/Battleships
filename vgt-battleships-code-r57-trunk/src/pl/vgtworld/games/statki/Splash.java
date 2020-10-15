@@ -44,9 +44,7 @@ public class Splash {
         
         janelaSplash.setVisible(true);
         
-        try{
-            Thread.sleep(tempoSplash);
-        }catch(InterruptedException e){}
+        Thread.sleep(tempoSplash);
         
         janelaSplash.dispose(); 
         
