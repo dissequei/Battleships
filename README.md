@@ -87,7 +87,7 @@ This are the tech stack and tools utilized to develop this project:
     📝 License 
 </h2>
 
-This project is under [LICENSE](https://github.com/FelipePardim/Battleships/LICENSE.md) license.
+This project is under [LICENSE](https://github.com/FelipePardim/Battleships/LICENSE) license.
 
 ---
 
